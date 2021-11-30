@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SubSink } from 'subsink';
 import { products } from '../data/products';
@@ -9,7 +9,7 @@ import { Product } from '../models/product';
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.scss']
 })
-export class ProductDetailComponent implements OnInit {
+export class ProductDetailComponent implements OnInit, OnDestroy {
 
   productId: number;
   private subs = new SubSink();
@@ -27,6 +27,10 @@ export class ProductDetailComponent implements OnInit {
         console.log(this.product);
       }
     });
+  }
+
+  ngOnDestroy(): void {
+    this.subs.unsubscribe();
   }
 
 }
