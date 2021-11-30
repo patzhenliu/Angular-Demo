@@ -1,0 +1,17 @@
+/* subscription box program */
+.program {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.program h3 {
+	margin-bottom: 10px;
+}
+.program img {
+	width: 700px;
+	border-radius: 25px;
+	margin-bottom: 10px;
+}
+.program p {
+	margin: 0 15%;
+}

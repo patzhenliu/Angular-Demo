@@ -1,0 +1,27 @@
+/* featured */
+.featured {
+	display: flex;
+	justify-items: center;
+	flex-direction: column;
+}
+.featured-images {
+	display: flex;
+	flex-direction: column;
+}
+#featured-product-img, .featured #animated-img {
+	border-radius: 25px;
+	padding: 5px;
+	border: 2px dashed #580808;
+	width: 1000px;
+	margin-bottom: 10px;
+}
+.featured #animated-img {
+	position: absolute;
+	top: 190px;
+	justify-self: center;
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;
+	}

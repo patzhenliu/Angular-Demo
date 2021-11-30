@@ -1,0 +1,23 @@
+.product-header p {
+	margin-top: 23px;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.product img {
+	width: 250px;
+	border-radius: 15px;
+}
+.product {
+	display: flex;
+	margin: 10px;
+	flex-direction: column;
+}
+.product-name {
+	margin-bottom: 0;
+}
+.product-name::before, .product-name::after {
+	content: " ~ ";
+}
+.price small {
+	vertical-align: top;
+}

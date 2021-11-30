@@ -1,0 +1,36 @@
+/* footer */
+footer {
+	color: #cfa99b;
+	background-color: #580808;
+	padding: 5px;
+    width: 100%;
+
+    .contact-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 80px;
+    }
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contact-info {
+        margin-bottom: 15px;
+    }
+    .hours, .location, .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0 70px;
+    }
+    h4 {
+        margin-bottom: 0;
+    }
+    div {
+        display: flex;
+        margin-bottom: 5px;
+    }
+}

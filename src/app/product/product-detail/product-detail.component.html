@@ -1,0 +1,46 @@
+<div class="main">
+    <!-- Products Section -->
+    <div class="content products detail">
+        <div class="product-header">
+            <h2>Product Detail</h2>
+        </div>
+
+        <div class="product">
+            <img src="../../assets/products/product-{{product.id}}.jpg" alt="{{product.name}}" id="original-product" width="400px">
+        </div>
+        <div class="product-description">
+            <h3 class="product-name">{{product.name}}</h3>
+            <p class="price">{{product.price}}<small>.99</small></p>
+        </div>
+        <div class="product-details">
+            <h4>Details</h4>
+            <ul>
+                <li>Front button up closure, single breasted placket</li>
+                <li>Mid-Length wool blend coat with most basic design, easy to match</li>
+            </ul>
+        </div>
+        <div class="product-purchase">
+            <form action="../purchase/shopping-cart.html" method="POST">
+                <div id="form-size">
+
+                    <label><input type="radio" name="size" value="x-small" required> X-small</label>
+                    <label><input type="radio" name="size" value="small"> Small</label>
+                    <label><input type="radio" name="size" value="medium"> Medium</label>
+                    <label><input type="radio" name="size" value="large"> Large</label>
+                </div>
+                <div id="form-quantity">
+                    <label for="quantity">Qty</label>
+                    <input id="quantity" class="number-input" type="number" min="1" max="99" value="1">
+                    <input class="link-button center button" type="submit" value="Add to cart">
+                </div>
+            </form>
+        </div>
+        <div class="product-additional">
+            <a id="sizing-chart-link" href="sizing-chart.html"><small>Sizing chart</small></a>
+            <p>Free international shipping for orders over $50</p>
+            <p>Secured Payment</p>
+            <p>Return within 15 days</p>
+        </div>
+
+    </div>
+</div>

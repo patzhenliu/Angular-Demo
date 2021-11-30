@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+html {
+	margin: 0;
+	padding: 0;
+    overflow-x: hidden;
+}
+body { 
+	font: 1em 'Comfortaa', cursive;;
+	line-height: 1.88889;
+	color: #555753;
+	background-color: #F7F1EC;
+	margin: 0; 
+	padding: 0;
+}
+.content {
+	padding: 50px 0;
+	border-bottom: 1px solid #c9beb5;
+}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+}
+h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #F7F1EC;
+}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #dcd1cd;
+}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #cfa99b;
+}
+abbr {
+	border-bottom: none;
+}
+.flex-container {
+	display: flex;
+}
+.grid-container {
+	display: grid;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.price::before {
+	content: "$";
+}
+.inline-icon {
+	vertical-align: bottom;
+	font-size: 31px !important;
+ }
+ .link-button {
+	 background-color: #580808;
+	 color: #F7F1EC;
+	 padding: 5px 10px;
+	 border-radius: 6px;
+ }
+
+/* specific divs */
+.main { 
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	margin-top: 140px;
+}
+.sticky {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	z-index: 99;
+}
+
+/* animation */
+@keyframes fade {
+	0% {
+		opacity:1;
+	}
+	45% {
+	  opacity:1;
+	}
+	55% {
+	  opacity:0;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
